@@ -21,3 +21,9 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+tailwind.config.js
+manifest.json
+App.test.js
+reportWebVitals.js
+setupTests.js
+postcss.config.js
