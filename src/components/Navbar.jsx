@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <header className="text-black body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <a href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <GiWheat className="text-lime-500 text-5xl" />
             <span className="ml-3 text-2xl font-robo">KhetiBari</span>
           </a>
