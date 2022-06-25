@@ -1,19 +1,20 @@
 import React from "react";
 import { GiWheat } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
       <header className="text-black body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <Link to="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <GiWheat className="text-lime-500 text-5xl" />
             <span className="ml-3 text-2xl font-robo">KhetiBari</span>
-          </a>
+          </Link>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
+            <Link to='/auction' className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
               Auction
-            </a>
+            </Link>
             <a className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
               Freelance
             </a>

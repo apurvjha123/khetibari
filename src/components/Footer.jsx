@@ -1,17 +1,18 @@
 import React from 'react'
 import { GiWheat } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
     <footer className="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-800">
   <div className="sm:flex sm:items-center sm:justify-between">
-    <a href="/" className="flex items-center mb-4 sm:mb-0">
+    <Link to="/" className="flex items-center mb-4 sm:mb-0">
         <GiWheat className="text-lime-500 text-5xl" />
       <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
         KhetiBari
       </span>
-    </a>
+    </Link>
     <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
       <li>
         <a href="#" className="mr-4 hover:underline md:mr-6 ">
