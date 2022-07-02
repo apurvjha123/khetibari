@@ -11,6 +11,7 @@ import ProductTemp from './template/ProductTemp';
 function App() {
   return (
     <>
+
     <Router>
       <Navbar/>
       <div className="container my-3">
