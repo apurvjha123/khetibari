@@ -3,6 +3,7 @@ import img from "../images/farmer_PNG63.png";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { GiFarmer } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -16,7 +17,9 @@ const Home = () => {
                 We provide india's best marketplace for Farmers.
               </div>
               <button className="px-4 py-3 bg-lime-500 rounded-full font-semibold hover:bg-lime-400">
+                <Link to={'/register'}>
                 Sell your product
+                </Link>
               </button>
             </div>
             <img
