@@ -30,7 +30,7 @@ const Addproduct = () => {
       price : Number(price),
       seller : String(seller),
       image : String(image)
-    }).then(res => res.data)
+    }).then(res => res.data).catch(error => alert(error.response.data.error))
   }
   const handleSubmit = (event) =>{
     event.preventDefault();

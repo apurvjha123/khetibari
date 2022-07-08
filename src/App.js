@@ -8,6 +8,7 @@ import Addproduct from './components/Addproduct';
 import UpdateProduct from './template/UpdateProduct';
 import ProductTemp from './template/ProductTemp';
 import Register from './components/Register';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/auction/:id" element={<UpdateProduct />} />
         <Route exact path="/product/:id" element={<ProductTemp />} />
         <Route exact path="/register" element={<Register />} />
+        <Route exact path="/login" element={<Login />} />
       </Routes>
       </div>
       <Footer/>

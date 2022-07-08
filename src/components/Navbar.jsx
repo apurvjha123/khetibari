@@ -25,9 +25,11 @@ const Navbar = () => {
               Contact us
             </a>
           </nav>
+          <Link to={'/register'}>
           <button className="inline-flex items-center bg-lime-500 border-0 py-2 px-3 focus:outline-none hover:bg-lime-400 rounded-full text-base mt-4 md:mt-0">
-            Become a Buyer
+            Sell your Product
           </button>
+          </Link>
         </div>
       </header>
     </>

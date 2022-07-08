@@ -4,10 +4,11 @@ import { useEffect } from 'react'
 import Products from '../template/Products'
 import { Link } from "react-router-dom";
 
-const fetechURL = async () =>{
-  return await axios.get('http://localhost:5000/routes').then(res => res.data)
-}
+
 const Auction = () => {
+  const fetechURL = async () =>{
+    return await axios.get('http://localhost:5000/routes').then(res => res.data)
+  }
   const [Product, setProduct] = useState()
     useEffect(() => {
       
@@ -18,7 +19,8 @@ const Auction = () => {
 
   return (
     <>
-    <Link to='/addProduct' className='underline'>AddProduct</Link>
+    <div className="flex pb-5 justify-center">
+    <Link to='/addProduct' className='px-4 py-3 text-gray-900 rounded-3xl bg-lime-400'>Add Product</Link></div>
       {Product && Product.map((product,i) => (
         <div key={i}>
         <Products products={product}/>

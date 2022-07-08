@@ -7,7 +7,12 @@ const Products = (props) => {
     const {_id,name , category, description, price, seller, image, Date } = props.products
 
     const clickHandler = async () => {
-      await axios.delete(`http://localhost:5000/routes/${_id}`).then(res => res.data).then(() => {history('/auction')})
+      await axios.delete(`http://localhost:5000/routes/${_id}`).then(res => {
+        if(res.statusText= 'OK'){
+          history('/auction')
+          return res.data;
+        }
+      })
     }
     const handleClick = () => {
       history(`/product/${_id}`)
