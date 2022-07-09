@@ -9,7 +9,7 @@ const Products = (props) => {
     const clickHandler = async () => {
       await axios.delete(`http://localhost:5000/routes/${_id}`).then(res => {
         if(res.statusText= 'OK'){
-          history('/auction')
+          history('/grains')
           return res.data;
         }
       })

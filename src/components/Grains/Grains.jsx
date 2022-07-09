@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import Products from '../template/Products'
+import Products from './Products'
 import { Link } from "react-router-dom";
 
 

@@ -30,7 +30,7 @@ const Register = () => {
       password: String(password)
     }).then(res => {
       if(res.statusText= 'OK'){
-        history('/auction')
+        history('/grains')
         return res.data;
       }
     }).catch(Error =>alert(Error.response.data.error)

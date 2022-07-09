@@ -6,6 +6,9 @@ const product = require('./routes/product')
 const env = require('dotenv')
 var cors = require('cors');
 const Register = require('./routes/Register');
+const preorder = require('./routes/orderitem/preorder');
+const router = require('./routes/product');
+
 
 
 // https://youtu.be/5Y5QKfxTErU
@@ -27,6 +30,7 @@ app.get('/',(req,res)=>{
 
 app.use('/routes',product)
 app.use('/register',Register)
+app.use('/preorder',preorder)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

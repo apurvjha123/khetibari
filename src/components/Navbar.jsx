@@ -12,8 +12,8 @@ const Navbar = () => {
             <span className="ml-3 text-2xl font-robo">KhetiBari</span>
           </Link>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <Link to='/auction' className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
-              Auction
+            <Link to='/grains' className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
+              Grains
             </Link>
             <a className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
               Freelance

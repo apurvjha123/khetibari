@@ -38,7 +38,7 @@ const ProductDetail = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    UpdateData().then(history("/auction"));
+    UpdateData().then(history("/grains"));
   };
 
   return (

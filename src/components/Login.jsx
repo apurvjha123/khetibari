@@ -29,7 +29,7 @@ const Login = () => {
             password: String(password)
         }).then(res => {
             if(res.statusText= 'OK'){
-              history('/auction')
+              history('/grains')
               console.log(res.data);
             }
         })

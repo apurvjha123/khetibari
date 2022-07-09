@@ -35,7 +35,7 @@ const Addproduct = () => {
   const handleSubmit = (event) =>{
     event.preventDefault();
     console.log(Detail)
-    sendData().then(history('/auction'))
+    sendData().then(history('/grains'))
   }
   return (
     <>
