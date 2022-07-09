@@ -45,12 +45,12 @@ const Products = (props) => {
         </div>
       </div>
       <div className='space-x-6'>
-      <Link to={`/auction/${_id}`}>
+      <Link to={`/grains/${_id}`}>
       <button className='bg-lime-400 px-3 py-2 rounded-lg'>
         Update
       </button>
       </Link>
-      <Link to={`/auction/${_id}`} onClick={clickHandler}>
+      <Link to={`/grains/${_id}`} onClick={clickHandler}>
       <button className='bg-lime-400 px-3 py-2 rounded-lg'>
         Delete
       </button>

@@ -9,6 +9,9 @@ import UpdateProduct from './components/Grains/UpdateProduct';
 import ProductTemp from './components/Grains/ProductTemp';
 import Register from './components/Register';
 import Login from './components/Login';
+import Preorder from '../src/components/PreOrder/Preorder';
+import Addorder from './components/PreOrder/Addorder';
+import Updateorder from './components/PreOrder/Updateorder';
 
 function App() {
   return (
@@ -21,10 +24,13 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/grains" element={<Grains />} />
         <Route exact path="/addProduct" element={<Addproduct />} />
-        <Route exact path="/auction/:id" element={<UpdateProduct />} />
+        <Route exact path="/grains/:id" element={<UpdateProduct />} />
         <Route exact path="/product/:id" element={<ProductTemp />} />
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/login" element={<Login />} />
+        <Route exact path="/orders" element={<Preorder />} />
+        <Route exact path="/addorder" element={<Addorder />} />
+        <Route exact path="/orders/:id" element={<Updateorder />} />
       </Routes>
       </div>
       <Footer/>

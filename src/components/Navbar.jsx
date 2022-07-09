@@ -16,7 +16,9 @@ const Navbar = () => {
               Grains
             </Link>
             <a className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
-              Freelance
+            <Link to='/orders' className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
+              Pre Order
+              </Link>
             </a>
             <a className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
               vegitables
