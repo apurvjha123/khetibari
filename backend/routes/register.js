@@ -90,7 +90,7 @@ router.post(
           { _id: user._id },
           "process.env.ACCESS_TOKEN"
       );
-      return res.status(200).json({ accessToken });
+      return res.status(200).json({_id :user._id, email: user.email ,accessToken });
 
     } catch (error) {
       console.log({error})

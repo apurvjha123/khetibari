@@ -9,7 +9,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`http://localhost:5000/routes/${id}`)
+        .get(`/routes/${id}`)
         .then((res) => res.data)
         .then(data => setDetail(data.product));
     };
@@ -26,7 +26,7 @@ const ProductDetail = () => {
   const UpdateData = async () => {
     const { name, category, description, price, seller, image } = Detail;
     await axios
-      .put(`http://localhost:5000/routes/${id}`, {
+      .put(`/routes/${id}`, {
         name: String(name),
         category: String(category),
         description: String(description),

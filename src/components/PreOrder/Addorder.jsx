@@ -21,7 +21,7 @@ const Addorder = () => {
 
     const sendData=async ()=>{
         const {name , category, ordersummary, price, needwithin,seller, image } = Detail
-        await axios.post('http://localhost:5000/preorder',{
+        await axios.post('/preorder',{
             name : String(name),
             category : String(category),
             ordersummary:String(ordersummary),

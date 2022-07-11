@@ -11,7 +11,7 @@ const Updateorder = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`http://localhost:5000/preorder/${id}`)
+        .get(`/preorder/${id}`)
         .then((res) => res.data)
         .then(data => setDetail(data.preorder));
     };
@@ -21,7 +21,7 @@ const Updateorder = () => {
 
   const updateData = async () => {
     const {name , category, ordersummary, price, needwithin,seller, image } = Detail
-        await axios.post('http://localhost:5000/preorder',{
+        await axios.post('/preorder',{
             name : String(name),
             category : String(category),
             ordersummary:String(ordersummary),

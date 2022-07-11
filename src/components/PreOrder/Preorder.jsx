@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 const Preorder = () => {
 
     const fetechURL = async () =>{
-        return await axios.get('http://localhost:5000/preorder').then(res => res.data)
+        return await axios.get('/preorder').then(res => res.data)
       }
       const [orders, setorders] = useState()
         useEffect(() => {
@@ -14,7 +14,6 @@ const Preorder = () => {
           fetechURL().then(data => setorders(data.preorder))
     
         },[]);
-        console.log(orders)
   return (
     <>
     <div className="flex pb-5 justify-center">

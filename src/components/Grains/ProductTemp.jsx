@@ -6,7 +6,7 @@ const ProductTemp = () => {
   const id = useParams().id;
   const [Input, setInput] = useState({})
   const fetchData = async () => {
-    await axios.get(`http://localhost:5000/routes/${id}`)
+    await axios.get(`/routes/${id}`)
       .then(res => setInput(res.data.product))
     
   }
@@ -14,7 +14,7 @@ const ProductTemp = () => {
     fetchData()
   }, [])
   const {name , category, description, price, seller, image } = Input
-  console.log(Input)
+
    return(
     <>
      {Input && <section className="text-lime-600 body-font overflow-hidden">

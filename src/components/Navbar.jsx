@@ -16,12 +16,12 @@ const Navbar = () => {
               Grains
             </Link>
             <a className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
-            <Link to='/orders' className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
-              Pre Order
+            <Link to='/orders' className="hover:text-lime-700 cursor-pointer font-semibold">
+              Pre-Order
               </Link>
             </a>
             <a className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
-              vegitables
+              Auction
             </a>
             <a className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
               Contact us

@@ -61,12 +61,10 @@ router.post('/',async (req,res)=>{
 
 //UPDATE Preorder
 
-
-
-router.put('/:Id', async (req, res)=>{
+router.put('/:preorderId', async (req, res)=>{
     let preorder;
     try {
-        const id = req.params.Id;
+        const id = req.params.preorderId;
         const {name , category, ordersummary, price,needwithin ,seller, image }= req.body
         preorder = await Preorder.findByIdAndUpdate(id,{
             name,
@@ -77,7 +75,7 @@ router.put('/:Id', async (req, res)=>{
             seller,
             image
         })
-        preorder = await preorder.save()
+        preorder = await preorder.save();
 
         if(! preorder){
           return  res.status(404).json({message : 'Unable to update'})
@@ -87,9 +85,6 @@ router.put('/:Id', async (req, res)=>{
         console.log(error);
     }
 })
-
-
-
 
 // Delete Preorder
 

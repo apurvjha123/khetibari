@@ -24,7 +24,7 @@ const Register = () => {
     if(!username || !email || !password){
      alert('credential can not be empty')
     }
-    await axios.post('http://localhost:5000/register/signup',{
+    await axios.post('/register/signup',{
       username : String(username),
       email : String(email),
       password: String(password)
@@ -40,7 +40,6 @@ const Register = () => {
   const handleSubmit = (e)=>{
     e.preventDefault();
     sendData()
-    console.log(Input)
   }
 
   return (

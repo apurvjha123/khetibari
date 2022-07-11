@@ -2,12 +2,13 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import Products from './Products'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Auction = () => {
+  
   const fetechURL = async () =>{
-    return await axios.get('http://localhost:5000/routes').then(res => res.data)
+    return await axios.get('/routes').then(res => res.data)
   }
   const [Product, setProduct] = useState()
     useEffect(() => {
@@ -15,7 +16,6 @@ const Auction = () => {
       fetechURL().then(data => setProduct(data.product))
 
     },[]);
-    console.log(Product)
 
   return (
     <>

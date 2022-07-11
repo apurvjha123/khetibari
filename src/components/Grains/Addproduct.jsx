@@ -23,7 +23,7 @@ const Addproduct = () => {
   }
   const sendData = async ()=>{
     const {name , category, description, price, seller, image }= Detail
-    await axios.post('http://localhost:5000/routes',{
+    await axios.post('/routes',{
       name : String(name),
       category : String(category),
       description:String(description),
