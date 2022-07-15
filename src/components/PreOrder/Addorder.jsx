@@ -21,7 +21,7 @@ const Addorder = () => {
 
     const sendData=async ()=>{
         const {name , category, ordersummary, price, needwithin,seller, image } = Detail
-        await axios.post('/preorder',{
+        await axios.post('https://khetibari.herokuapp.com/preorders',{
             name : String(name),
             category : String(category),
             ordersummary:String(ordersummary),
@@ -47,10 +47,10 @@ const Addorder = () => {
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-12">
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-lime-900">
-        Add Product
+        Add Order
       </h1>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-      Enter the Product Details
+      Enter the Order Details
       </p>
     </div>
     <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -84,7 +84,7 @@ const Addorder = () => {
         <div className="p-2 w-1/2">
           <div className="relative">
             <label htmlFor="ordersummary" className="leading-7 text-sm font-semibold text-lime-600">
-              ordersummary
+              Order Details
             </label>
             <input
               type="text"
@@ -97,7 +97,7 @@ const Addorder = () => {
         <div className="p-2 w-1/2">
           <div className="relative">
             <label htmlFor="price" className="leading-7 text-sm font-semibold text-lime-600">
-              Price
+              Price for Total Production
             </label>
             <input
               type="text"
@@ -123,7 +123,7 @@ const Addorder = () => {
         <div className="p-2 w-1/2">
           <div className="relative">
             <label htmlFor="seller" className="leading-7 text-sm font-semibold text-lime-600">
-              Seller
+              Orderer Name
             </label>
             <input
               type="text"
@@ -136,7 +136,7 @@ const Addorder = () => {
         <div className="p-2 w-1/2">
           <div className="relative">
             <label htmlFor="image" className="leading-7 text-sm font-semibold text-lime-600">
-              Image
+              Image URL
             </label>
             <input
               type="text"
@@ -149,7 +149,7 @@ const Addorder = () => {
         
         <div className="p-2 w-full">
           <button className="flex mx-auto text-white bg-lime-500 border-0 py-2 px-8 focus:outline-none hover:bg-lime-600 rounded text-lg">
-            Add Product
+            Add Order
           </button>
         </div>
       </div>

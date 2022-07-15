@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 const Preorder = () => {
 
     const fetechURL = async () =>{
-        return await axios.get('/preorder').then(res => res.data)
+        return await axios.get('https://khetibari.herokuapp.com/preorders').then(res => res.data)
       }
       const [orders, setorders] = useState()
         useEffect(() => {
@@ -17,7 +17,7 @@ const Preorder = () => {
   return (
     <>
     <div className="flex pb-5 justify-center">
-    <Link to='/addOrder' className='px-4 py-3 text-gray-900 rounded-3xl bg-lime-400'>Add Product</Link></div>
+    <Link to='/addOrder' className='px-4 py-3 text-gray-900 rounded-3xl bg-lime-400'>Add Order</Link></div>
       {orders && orders.map((order,i) => (
         <div key={i}>
         <Orders orders={order}/>

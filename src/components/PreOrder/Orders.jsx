@@ -28,7 +28,7 @@ const Orders = (props) => {
     alert(`${name}'s Order Accepted`)
   }
   const clickHandlerdel =async () => {
-    await axios.delete(`/preorder/${_id}`)
+    await axios.delete(`https://khetibari.herokuapp.com/preorders/${_id}`)
     .then(res => {
       if(res.statusText= 'OK'){
         history('/orders')

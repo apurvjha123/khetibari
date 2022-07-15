@@ -8,14 +8,14 @@ import { Link, useNavigate } from "react-router-dom";
 const Auction = () => {
   
   const fetechURL = async () =>{
-    return await axios.get('/routes').then(res => res.data)
+    return await axios.get('https://khetibari.herokuapp.com/products').then(res => res.data)
   }
   const [Product, setProduct] = useState()
     useEffect(() => {
       
       fetechURL().then(data => setProduct(data.product))
 
-    },[]);
+    },[Product]);
 
   return (
     <>

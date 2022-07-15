@@ -9,7 +9,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`/routes/${id}`)
+        .get(`https://khetibari.herokuapp.com/products/${id}`)
         .then((res) => res.data)
         .then(data => setDetail(data.product));
     };
@@ -26,7 +26,7 @@ const ProductDetail = () => {
   const UpdateData = async () => {
     const { name, category, description, price, seller, image } = Detail;
     await axios
-      .put(`/routes/${id}`, {
+      .put(`https://khetibari.herokuapp.com/products/${id}`, {
         name: String(name),
         category: String(category),
         description: String(description),

@@ -25,7 +25,7 @@ const Login = () => {
       alert("credential can not be empty");
     }
     await axios
-      .post("/register/login", {
+      .post("https://khetibari.herokuapp.com/register/login", {
         email: String(email),
         password: String(password),
       })

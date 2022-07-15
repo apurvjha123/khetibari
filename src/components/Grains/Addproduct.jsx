@@ -23,7 +23,7 @@ const Addproduct = () => {
   }
   const sendData = async ()=>{
     const {name , category, description, price, seller, image }= Detail
-    await axios.post('/routes',{
+    await axios.post('https://khetibari.herokuapp.com/products',{
       name : String(name),
       category : String(category),
       description:String(description),
@@ -80,7 +80,7 @@ const Addproduct = () => {
         <div className="p-2 w-1/2">
           <div className="relative">
             <label htmlFor="description" className="leading-7 text-sm font-semibold text-lime-600">
-              description
+              Description
             </label>
             <input
               type="text"
@@ -93,7 +93,7 @@ const Addproduct = () => {
         <div className="p-2 w-1/2">
           <div className="relative">
             <label htmlFor="price" className="leading-7 text-sm font-semibold text-lime-600">
-              Price
+              Price per Quintal
             </label>
             <input
               type="text"
@@ -106,7 +106,7 @@ const Addproduct = () => {
         <div className="p-2 w-1/2">
           <div className="relative">
             <label htmlFor="seller" className="leading-7 text-sm font-semibold text-lime-600">
-              Seller
+              Seller Name
             </label>
             <input
               type="text"
@@ -119,7 +119,7 @@ const Addproduct = () => {
         <div className="p-2 w-1/2">
           <div className="relative">
             <label htmlFor="image" className="leading-7 text-sm font-semibold text-lime-600">
-              Image
+              Image URL
             </label>
             <input
               type="text"

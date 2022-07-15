@@ -7,7 +7,7 @@ const Products = (props) => {
     const {_id,name , category, description, price, seller, image, Date } = props.products
 
     const clickHandler = async () => {
-      await axios.delete(`/routes/${_id}`).then(res => {
+      await axios.delete(`https://khetibari.herokuapp.com/products/${_id}`).then(res => {
         if(res.statusText= 'OK'){
           history('/grains')
           return res.data;

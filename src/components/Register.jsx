@@ -24,7 +24,7 @@ const Register = () => {
     if(!username || !email || !password){
      alert('credential can not be empty')
     }
-    await axios.post('/register/signup',{
+    await axios.post('https://khetibari.herokuapp.com/register/signup',{
       username : String(username),
       email : String(email),
       password: String(password)

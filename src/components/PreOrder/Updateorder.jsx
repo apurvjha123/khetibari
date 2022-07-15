@@ -11,7 +11,7 @@ const Updateorder = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`/preorder/${id}`)
+        .get(`https://khetibari.herokuapp.com/preorders/${id}`)
         .then((res) => res.data)
         .then(data => setDetail(data.preorder));
     };
@@ -21,7 +21,7 @@ const Updateorder = () => {
 
   const updateData = async () => {
     const {name , category, ordersummary, price, needwithin,seller, image } = Detail
-        await axios.post('/preorder',{
+        await axios.post(`https://khetibari.herokuapp.com/preorders/${id}`,{
             name : String(name),
             category : String(category),
             ordersummary:String(ordersummary),

@@ -6,7 +6,7 @@ const ProductTemp = () => {
   const id = useParams().id;
   const [Input, setInput] = useState({})
   const fetchData = async () => {
-    await axios.get(`/routes/${id}`)
+    await axios.get(`https://khetibari.herokuapp.com/products/${id}`)
       .then(res => setInput(res.data.product))
     
   }
