@@ -26,7 +26,7 @@ const ContactUs = () => {
             </h2>
             <h3 className="text-gray-500 mb-3">Student</h3>
             <p className="mb-4">
-              This Project is Build Me and You can contact me for any query or modification. Thanks !
+              This Project is Build by me and You can contact me for any query or modification. Thanks !
             </p>
             <span className="inline-flex">
               <a className="ml-4 text-gray-500" href='https://twitter.com/Apurvjh67211159'>
