@@ -11,9 +11,6 @@ const router = require('./routes/product');
 
 
 
-// https://youtu.be/5Y5QKfxTErU
-// https://youtu.be/VsUzmlZfYNg
-
 mongoose.connect('mongodb+srv://apurvjha1234:apurvjha1234@cluster0.gw051.mongodb.net/?retryWrites=true&w=majority',
 ()=>{
     console.log("connected successfully");

@@ -1,3 +1,4 @@
+import { Alert } from 'antd';
 import axios from 'axios';
 import React, {useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
@@ -15,6 +16,9 @@ const ProductTemp = () => {
   }, [])
   const {name , category, description, price, seller, image } = Input
 
+  const buy = () => {
+    alert(`${name} bought successfull`)
+  }
    return(
     <>
      {Input && <section className="text-lime-600 body-font overflow-hidden">
@@ -138,7 +142,7 @@ const ProductTemp = () => {
           <span className="title-font font-medium text-2xl text-lime-900">
            ₹ {price}
           </span>
-          <button className="flex ml-auto text-white bg-lime-500 border-0 py-2 px-6 focus:outline-none hover:bg-lime-600 rounded">
+          <button onClick={buy} className="flex ml-auto text-white bg-lime-500 border-0 py-2 px-6 focus:outline-none hover:bg-lime-600 rounded">
             Buy Now
           </button>
           <button className="rounded-full w-10 h-10 bg-lime-200 p-0 border-0 inline-flex items-center justify-center text-lime-500 ml-4">

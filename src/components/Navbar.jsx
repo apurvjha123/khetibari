@@ -21,10 +21,9 @@ const Navbar = () => {
               </Link>
             </a>
             <a className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
-              Auction
-            </a>
-            <a className="mr-5 hover:text-lime-700 cursor-pointer font-semibold">
+            <Link to='/contact' className="hover:text-lime-700 cursor-pointer font-semibold">
               Contact us
+              </Link>
             </a>
           </nav>
           <Link to={'/register'}>

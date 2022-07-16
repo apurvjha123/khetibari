@@ -8,7 +8,11 @@ module.exports = {
     extend: {
       fontFamily :{
         robo : "'Roboto Slab', serif"
-      }
+      },
+      padding:{
+        '1/3':"33.33333%",
+        '2/3':"66.66666%",
+      },
     },
   },
   plugins: [],

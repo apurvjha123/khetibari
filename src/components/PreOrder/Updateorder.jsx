@@ -60,10 +60,10 @@ const Updateorder = () => {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-lime-900">
-              Update Product
+              Update Order
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Enter to update the Product Details
+              Enter to update the Order Details
             </p>
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -110,7 +110,7 @@ const Updateorder = () => {
                     htmlFor="ordersummary"
                     className="leading-7 text-sm font-semibold text-lime-600"
                   >
-                    ordersummary
+                    Order Detail
                   </label>
                   <input
                     type="text"
@@ -128,7 +128,7 @@ const Updateorder = () => {
                     htmlFor="price"
                     className="leading-7 text-sm font-semibold text-lime-600"
                   >
-                    Price
+                    Price for Total Production
                   </label>
                   <input
                     type="text"
@@ -164,7 +164,7 @@ const Updateorder = () => {
                     htmlFor="seller"
                     className="leading-7 text-sm font-semibold text-lime-600"
                   >
-                    Seller
+                    Seller Name
                   </label>
                   <input
                     type="text"
@@ -182,7 +182,7 @@ const Updateorder = () => {
                     htmlFor="image"
                     className="leading-7 text-sm font-semibold text-lime-600"
                   >
-                    Image
+                    Image URL
                   </label>
                   <input
                     type="text"
@@ -197,7 +197,7 @@ const Updateorder = () => {
 
               <div className="p-2 w-full">
                 <button className="flex mx-auto text-white bg-lime-500 border-0 py-2 px-8 focus:outline-none hover:bg-lime-600 rounded text-lg">
-                  Update
+                  Update Order
                 </button>
               </div>
             </div>

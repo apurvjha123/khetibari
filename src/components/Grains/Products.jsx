@@ -24,8 +24,8 @@ const Products = (props) => {
   <div className="container px-5 py-24 mx-auto">
     <div className="-my-8 divide-y-2 divide-lime-100">
       <div className="py-8 flex flex-wrap md:flex-nowrap" onClick={handleClick}>
-        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-         <img src={image} alt={name} className="w-full rounded px-8" />
+        <div className="md:w-64 md:mb-0 mb-6 md:flex-shrink-0 flex flex-col">
+         <img src={image} alt={name} className="w-auto rounded px-8" />
         </div>
         <div className="md:flex-grow">
           <h2 className="text-2xl font-medium text-lime-900 title-font mb-2">

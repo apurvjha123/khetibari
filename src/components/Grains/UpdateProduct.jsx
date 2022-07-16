@@ -101,7 +101,7 @@ const ProductDetail = () => {
                     htmlFor="description"
                     className="leading-7 text-sm font-semibold text-lime-600"
                   >
-                    description
+                    Description
                   </label>
                   <input
                     type="text"
@@ -119,7 +119,7 @@ const ProductDetail = () => {
                     htmlFor="price"
                     className="leading-7 text-sm font-semibold text-lime-600"
                   >
-                    Price
+                    Price per Quintal
                   </label>
                   <input
                     type="text"
@@ -137,7 +137,7 @@ const ProductDetail = () => {
                     htmlFor="seller"
                     className="leading-7 text-sm font-semibold text-lime-600"
                   >
-                    Seller
+                    Seller Name
                   </label>
                   <input
                     type="text"
@@ -155,7 +155,7 @@ const ProductDetail = () => {
                     htmlFor="image"
                     className="leading-7 text-sm font-semibold text-lime-600"
                   >
-                    Image
+                    Image URL
                   </label>
                   <input
                     type="text"
@@ -170,7 +170,7 @@ const ProductDetail = () => {
 
               <div className="p-2 w-full">
                 <button className="flex mx-auto text-white bg-lime-500 border-0 py-2 px-8 focus:outline-none hover:bg-lime-600 rounded text-lg">
-                  Update
+                  Update Product
                 </button>
               </div>
             </div>

@@ -12,6 +12,7 @@ import Login from './components/Login';
 import Preorder from '../src/components/PreOrder/Preorder';
 import Addorder from './components/PreOrder/Addorder';
 import Updateorder from './components/PreOrder/Updateorder';
+import ContactUs from '../src/components/ContactUs';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/orders" element={<Preorder />} />
         <Route exact path="/addorder" element={<Addorder />} />
         <Route exact path="/orders/:id" element={<Updateorder />} />
+        <Route exact path="/contact" element={<ContactUs />} />
       </Routes>
       </div>
       <Footer/>

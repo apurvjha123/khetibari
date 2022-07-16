@@ -45,7 +45,7 @@ const Orders = (props) => {
               className="py-8 flex flex-wrap md:flex-nowrap"
               onClick={handleClick}
             >
-              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <div className="md:w-64 md:mb-0 mb-6 md:flex-shrink-0 flex flex-col">
                 <img src={image} alt={name} className="w-full rounded px-8" />
               </div>
               <div className="md:flex-grow">
